@@ -15,25 +15,25 @@ spec:
             - name: DB_USER
               valueFrom:
                 secretKeyRef:
-                  name: katib-mysql-secrets
+                  name: katib-secret
                   key: DB_USER
             - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: katib-mysql-secrets
+                  name: katib-secret
                   key: DB_PASSWORD
             - name: KATIB_MYSQL_DB_DATABASE
               valueFrom:
                 secretKeyRef:
-                  name: katib-mysql-secrets
+                  name: katib-secret
                   key: KATIB_MYSQL_DB_DATABASE
             - name: KATIB_MYSQL_DB_HOST
               valueFrom:
                 secretKeyRef:
-                  name: katib-mysql-secrets
+                  name: katib-secret
                   key: KATIB_MYSQL_DB_HOST
             - name: KATIB_MYSQL_DB_PORT
               valueFrom:
                 secretKeyRef:
-                  name: katib-mysql-secrets
+                  name: katib-secret
                   key: KATIB_MYSQL_DB_PORT
