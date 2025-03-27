@@ -23,12 +23,15 @@ spec:
           image: ghcr.io/kubeflow/katib/katib-db-manager
           env:
             - name: DB_NAME
-              value: "mysql"
+              valueFrom:
+                secretKeyRef:
+                  name: katib-secrets
+                  key: KATIB_MYSQL_DB_DATABASE
             - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: katib-mysql-secrets
-                  key: MYSQL_ROOT_PASSWORD
+                  name: katib-secrets
+                  key: DB_PASSWORD
           command:
             - "./katib-db-manager"
           ports:
