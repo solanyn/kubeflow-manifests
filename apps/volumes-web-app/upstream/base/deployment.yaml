@@ -28,6 +28,10 @@ spec:
         - name: viewer-spec
           mountPath: /etc/config/viewer-spec.yaml
           subPath: viewer-spec.yaml 
+        resources:
+          requests:
+            cpu: 10m
+            memory: 100Mi
       serviceAccountName: service-account
       volumes: 
       - name: viewer-spec
