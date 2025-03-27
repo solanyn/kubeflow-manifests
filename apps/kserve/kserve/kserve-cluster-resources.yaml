@@ -13,11 +13,11 @@ spec:
     name: kserve-container
     resources:
       limits:
-        cpu: "1"
+        cpu: "10m"
         memory: 2Gi
       requests:
-        cpu: "1"
-        memory: 2Gi
+        cpu: "10m"
+        memory: 100Mi
     securityContext:
       allowPrivilegeEscalation: false
       capabilities:
@@ -63,8 +63,8 @@ spec:
         cpu: "1"
         memory: 2Gi
       requests:
-        cpu: "1"
-        memory: 2Gi
+        cpu: "10m"
+        memory: 100Mi
     securityContext:
       allowPrivilegeEscalation: false
       capabilities:
@@ -106,8 +106,8 @@ spec:
         cpu: "1"
         memory: 2Gi
       requests:
-        cpu: "1"
-        memory: 2Gi
+        cpu: "10m"
+        memory: 100Mi
     securityContext:
       allowPrivilegeEscalation: false
       capabilities:
@@ -171,8 +171,8 @@ spec:
         cpu: "1"
         memory: 2Gi
       requests:
-        cpu: "1"
-        memory: 2Gi
+        cpu: "10m"
+        memory: 100Mi
     securityContext:
       allowPrivilegeEscalation: false
       capabilities:
@@ -209,8 +209,8 @@ spec:
         cpu: "1"
         memory: 2Gi
       requests:
-        cpu: "1"
-        memory: 2Gi
+        cpu: "10m"
+        memory: 100Mi
     securityContext:
       allowPrivilegeEscalation: false
       capabilities:
@@ -251,8 +251,8 @@ spec:
         cpu: "1"
         memory: 2Gi
       requests:
-        cpu: "1"
-        memory: 2Gi
+        cpu: "10m"
+        memory: 100Mi
     securityContext:
       allowPrivilegeEscalation: false
       capabilities:
@@ -293,8 +293,8 @@ spec:
         cpu: "1"
         memory: 2Gi
       requests:
-        cpu: "1"
-        memory: 2Gi
+        cpu: "10m"
+        memory: 100Mi
     securityContext:
       allowPrivilegeEscalation: false
       capabilities:
@@ -340,8 +340,8 @@ spec:
         cpu: "1"
         memory: 2Gi
       requests:
-        cpu: "1"
-        memory: 2Gi
+        cpu: "10m"
+        memory: 100Mi
     securityContext:
       allowPrivilegeEscalation: false
       capabilities:
@@ -383,8 +383,8 @@ spec:
         cpu: "1"
         memory: 2Gi
       requests:
-        cpu: "1"
-        memory: 2Gi
+        cpu: "10m"
+        memory: 100Mi
     securityContext:
       allowPrivilegeEscalation: false
       capabilities:
@@ -441,8 +441,8 @@ spec:
         cpu: "1"
         memory: 2Gi
       requests:
-        cpu: "1"
-        memory: 2Gi
+        cpu: "10m"
+        memory: 100Mi
     securityContext:
       allowPrivilegeEscalation: false
       capabilities:
@@ -472,7 +472,7 @@ spec:
         cpu: "1"
         memory: 1Gi
       requests:
-        cpu: 100m
+        cpu: "10m"
         memory: 100Mi
   supportedUriFormats:
   - prefix: gs://

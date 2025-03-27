@@ -2966,7 +2966,7 @@ spec:
             port: 8000
         resources:
           requests:
-            cpu: 100m
+            cpu: 10m
             memory: 100Mi
         securityContext:
           capabilities:
@@ -3175,8 +3175,8 @@ spec:
             cpu: 2000m
             memory: 1024Mi
           requests:
-            cpu: 100m
-            memory: 128Mi
+            cpu: 10m
+            memory: 100Mi
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:

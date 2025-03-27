@@ -5,7 +5,7 @@ metadata:
   labels:
     app: oauth2-proxy
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app.kubernetes.io/name: oauth2-proxy
@@ -38,18 +38,18 @@ spec:
         - name: OAUTH2_PROXY_CLIENT_ID
           valueFrom:
             secretKeyRef:
-              name: oauth2-proxy
-              key: client-id
+              name: oauth2-proxy-secret
+              key: KUBEFLOW_OIDC_CLIENT_ID
         - name: OAUTH2_PROXY_CLIENT_SECRET
           valueFrom:
             secretKeyRef:
-              name: oauth2-proxy
-              key: client-secret
+              name: oauth2-proxy-secret
+              key: KUBEFLOW_OIDC_CLIENT_SECRET
         - name: OAUTH2_PROXY_COOKIE_SECRET
           valueFrom:
             secretKeyRef:
-              name: oauth2-proxy
-              key: cookie-secret
+              name: oauth2-proxy-secret
+              key: KUBEFLOW_OAUTH2_PROXY_COOKIE_SECRET
         - name: OAUTH2_PROXY_COOKIE_SECURE
           valueFrom:
             configMapKeyRef:

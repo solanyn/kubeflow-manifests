@@ -32098,8 +32098,8 @@ spec:
             cpu: 100m
             memory: 300Mi
           requests:
-            cpu: 100m
-            memory: 200Mi
+            cpu: "10m"
+            memory: 100Mi
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:
@@ -32180,8 +32180,8 @@ spec:
             cpu: 100m
             memory: 300Mi
           requests:
-            cpu: 100m
-            memory: 200Mi
+            cpu: "10m"
+            memory: 100Mi
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:
@@ -32238,8 +32238,8 @@ spec:
             cpu: 100m
             memory: 300Mi
           requests:
-            cpu: 100m
-            memory: 200Mi
+            cpu: "10m"
+            memory: 100Mi
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:

@@ -26,7 +26,7 @@ kind: DestinationRule
 metadata:
   name: ml-pipeline-mysql
 spec:
-  host: mysql.kubeflow.svc.cluster.local
+  host: mariadb.database.svc.cluster.local
   trafficPolicy:
     tls:
       mode: ISTIO_MUTUAL

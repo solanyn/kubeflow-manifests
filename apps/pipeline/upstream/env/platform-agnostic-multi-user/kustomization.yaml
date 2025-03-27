@@ -7,9 +7,9 @@ resources:
   - ../../base/metadata/base
   - ../../base/metadata/options/istio
   - ../../third-party/argo/installs/cluster
-  - ../../third-party/mysql/base
+  # - ../../third-party/mysql/base
   - ../../third-party/mysql/options/istio
-  - ../../third-party/minio/base
+  # - ../../third-party/minio/base
   - ../../third-party/minio/options/istio
 
 # Identifier for application manager to apply ownerReference.

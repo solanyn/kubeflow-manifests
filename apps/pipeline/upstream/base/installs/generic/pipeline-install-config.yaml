@@ -15,12 +15,12 @@ data:
   dbHost: mysql # relic to be removed after release
   dbPort: "3306" # relic to be removed after release
   dbType: mysql
-  mysqlHost: mysql
+  mysqlHost: mariadb.database.svc.cluster.local
   mysqlPort: "3306"
-  mlmdDb: metadb
-  cacheDb: cachedb
-  pipelineDb: mlpipeline
-  bucketName: mlpipeline
+  mlmdDb: kfp_metadata
+  cacheDb: kfp_cache
+  pipelineDb: kfp_pipelines
+  bucketName: kfp
   ## defaultPipelineRoot: Optional. Default pipeline root in v2 compatible mode.
   ## https://www.kubeflow.org/docs/components/pipelines/sdk/v2/v2-compatibility/
   ##

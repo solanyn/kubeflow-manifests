@@ -8,6 +8,7 @@ resources:
   - kubeflow-katib-roles.yaml
   - ui-virtual-service.yaml
   - istio-authorizationpolicy.yaml
+  - ./externalsecret.yaml
 images:
   - name: ghcr.io/kubeflow/katib/katib-controller
     newName: ghcr.io/kubeflow/katib/katib-controller

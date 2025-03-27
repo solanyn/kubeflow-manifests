@@ -49,8 +49,8 @@ spec:
             cpu: 500m
             memory: 2Gi
           requests:
-            cpu: 500m
-            memory: 2Gi
+            cpu: 10m
+            memory: 100Mi
         ports:
           - containerPort: 8080
         args:

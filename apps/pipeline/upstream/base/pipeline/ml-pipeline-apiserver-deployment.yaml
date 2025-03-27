@@ -39,13 +39,13 @@ spec:
         - name: DBCONFIG_USER
           valueFrom:
             secretKeyRef:
-              name: mysql-secret
-              key: username
+              name: kfp-secret
+              key: KUBEFLOW_MARIADB_USER
         - name: DBCONFIG_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: mysql-secret
-              key: password
+              name: kfp-secret
+              key: KUBEFLOW_MARIADB_PASSWORD
         - name: DBCONFIG_DBNAME
           valueFrom:
             configMapKeyRef:
@@ -76,13 +76,13 @@ spec:
         - name: DBCONFIG_MYSQLCONFIG_USER
           valueFrom:
             secretKeyRef:
-              name: mysql-secret
-              key: username
+              name: kfp-secret
+              key: KUBEFLOW_MARIADB_USER
         - name: DBCONFIG_MYSQLCONFIG_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: mysql-secret
-              key: password
+              name: kfp-secret
+              key: KUBEFLOW_MARIADB_PASSWORD
         - name: DBCONFIG_MYSQLCONFIG_DBNAME
           valueFrom:
             configMapKeyRef:
@@ -102,13 +102,13 @@ spec:
         - name: OBJECTSTORECONFIG_ACCESSKEY
           valueFrom:
             secretKeyRef:
-              name: mlpipeline-minio-artifact
-              key: accesskey
+              name: kubeflow-pipelines-secret
+              key: AWS_ACCESS_KEY_ID
         - name: OBJECTSTORECONFIG_SECRETACCESSKEY
           valueFrom:
             secretKeyRef:
-              name: mlpipeline-minio-artifact
-              key: secretkey
+              name: kubeflow-pipelines-secret
+              key: AWS_SECRET_ACCESS_KEY
         image: ghcr.io/kubeflow/kfp-api-server:dummy
         imagePullPolicy: IfNotPresent
         name: ml-pipeline-api-server
@@ -168,6 +168,6 @@ spec:
             - ALL
         resources:
           requests:
-            cpu: 250m
-            memory: 500Mi
+            cpu: 10m
+            memory: 100Mi
       serviceAccountName: ml-pipeline

@@ -6,7 +6,7 @@ resources:
   - ../../cache
   - ../../cache-deployer
   - pipeline-install-config.yaml
-  - mysql-secret.yaml
+  # - mysql-secret.yaml
 vars:
   - name: kfp-namespace
     objref:

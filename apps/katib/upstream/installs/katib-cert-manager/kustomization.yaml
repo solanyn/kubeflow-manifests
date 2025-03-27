@@ -12,7 +12,7 @@ resources:
   # Katib DB manager.
   - ../../components/db-manager/
   # Katib DB mysql.
-  - ../../components/mysql/
+  # - ../../components/mysql/
   # Katib UI.
   - ../../components/ui/
   # Katib webhooks.
